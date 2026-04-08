@@ -1,26 +1,5 @@
 /* Retreat Overview 2024 — JS */
 
-/* Navbar scroll + toggle */
-(function () {
-  var navbar = document.getElementById("navbar");
-  var toggle = document.getElementById("navToggle");
-  var links = document.getElementById("navLinks");
-
-  window.addEventListener("scroll", function () {
-    navbar.classList.toggle("scrolled", window.scrollY > 20);
-  });
-
-  toggle.addEventListener("click", function () {
-    links.classList.toggle("open");
-  });
-
-  links.querySelectorAll("a").forEach(function (a) {
-    a.addEventListener("click", function () {
-      links.classList.remove("open");
-    });
-  });
-})();
-
 /* Scroll-down buttons */
 document.querySelectorAll(".ro-scroll-btn").forEach(function (btn) {
   btn.addEventListener("click", function () {
